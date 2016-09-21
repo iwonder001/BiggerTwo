@@ -7,13 +7,14 @@ public class Challange {
 		 * 2. Consider the sum of the values in each array. Return the array
 		 * which has the largest sum. In event of a tie, return a.
 		 */
-
-		// int[] test = { 1, 2 };
-		// int[] test2 = { 3, 4 };
+		
+		 int[] test = { 1, 2 };
+		 int[] test2 = { 3, 4 };
+		 biggerTwo(test, test2);
 
 	}// psvm
 
-	public int[] biggerTwo(int[] a, int[] b) {
+	public static int[] biggerTwo(int[] a, int[] b) {
 		// Get sum of a
 		int sumA = a[0];
 		int sumA1 = a[1];
@@ -26,8 +27,18 @@ public class Challange {
 		int sumB1 = b[1];
 		int y = (sumB + sumB1);
 
-		// Compare which is larger sum and return larger sum. If a tie then
-		// return a.
+		/* Compare which is larger sum and return larger sum. If a tie then
+		return a. */
+		if(x>y) {
+			return a; 
+		}else if (x<y) { 
+			
+			return b;	
+		} else if (x==y){
+
+			return a;
+			
+		}//
 
 	}// biggerTwo method close
 
