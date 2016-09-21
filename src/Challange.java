@@ -29,17 +29,14 @@ public class Challange {
 
 		/* Compare which is larger sum and return larger sum. If a tie then
 		return a. */
-		if(x>y) {
+		if(x>=y) {
 			return a; 
-		}else if (x<y) { 
+		}else  { 
 			
 			return b;	
-		} else if (x==y){
+		}//if/else statement close
 
-			return a;
-			
-		}//
-
+		
 	}// biggerTwo method close
 
 }// class
