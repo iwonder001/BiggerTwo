@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Challange {
 
@@ -7,10 +8,12 @@ public class Challange {
 		 * 2. Consider the sum of the values in each array. Return the array
 		 * which has the largest sum. In event of a tie, return a.
 		 */
-		
-		 int[] test = { 1, 2 };
-		 int[] test2 = { 3, 4 };
-		 biggerTwo(test, test2);
+
+		int[] test = { 1, 2 };
+		int[] test2 = { 3, 4 };
+		int [] trying = biggerTwo(test, test2);
+		//test to see if method works. Need to use Array.toString to convert array to string
+		System.out.println(Arrays.toString(trying));
 
 	}// psvm
 
@@ -27,16 +30,17 @@ public class Challange {
 		int sumB1 = b[1];
 		int y = (sumB + sumB1);
 
-		/* Compare which is larger sum and return larger sum. If a tie then
-		return a. */
-		if(x>=y) {
-			return a; 
-		}else  { 
-			
-			return b;	
-		}//if/else statement close
+		/*
+		 * Compare which is larger sum and return larger sum. If a tie then
+		 * return a.
+		 */
+		if (x >= y) {
+			return a;
+		} else {
 
-		
+			return b;
+		} // if/else statement close
+
 	}// biggerTwo method close
 
 }// class
