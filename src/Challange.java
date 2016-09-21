@@ -15,13 +15,15 @@ public class Challange {
 	public int [] biggerTwo(int[] a, int[] b) {
 		        //Get sum of a
 		int sumA = a[0];
-		int sumA2 = a[1];
-		int x = (sumA + sumA2);
+		int sumA1 = a[1];
+		int x = (sumA + sumA1);
 //		System.out.println(x);
 //		return x;
 		
 				//Get sum of b
-				
+				int sumB =b[0];
+				int sumB1 = b[1];
+				int y = (sumB + sumB1);
 		
 				//Compare which is larger sum and return larger sum.  If a tie then return a.
 		 
